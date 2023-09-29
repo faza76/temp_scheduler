@@ -73,7 +73,8 @@ def checking_material_video():
 
 #Bot = BotIG(USERNAME, PASSWORD)
 #schedule.every().minutes.do(checking_material_post)
-schedule.every().minutes.do(checking_material_video)
+#schedule.every().minutes.do(checking_material_video)
+schedule.every().day.at("12:42").do(checking_material_video)
 
 while True:
     schedule.run_pending()
